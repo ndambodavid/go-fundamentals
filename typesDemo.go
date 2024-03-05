@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"slices"
+	"strings"
 )
 
 func demo() {
@@ -53,4 +56,24 @@ func maps() {
 
 	delete(ms, "soft")
 	fmt.Println(ms)
+}
+
+func structs() {
+	fmt.Println("Please select option")
+	fmt.Println("[1] menu")
+	in := bufio.NewReader(os.Stdin)
+	choice, _ := in.ReadString('\n')
+	choice = strings.TrimSpace(choice)
+
+	type menuItem struct {
+		name   string
+		prices map[string]float64
+	}
+
+	menu := []menuItem{
+		{name: "T-shirt", prices: map[string]float64{"small": 100.00, "medium": 150.00, "large": 200.00}},
+		{name: "M-jeans", prices: map[string]float64{"small": 800.00, "medium": 900.00, "large": 1000.00}},
+	}
+
+	fmt.Println(menu)
 }

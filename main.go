@@ -4,5 +4,6 @@ func main() {
 	//demo()
 	//cli()
 	//slice()
-	maps()
+	//maps()
+	structs()
 }
