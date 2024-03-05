@@ -2,5 +2,7 @@ package main
 
 func main() {
 	//demo()
-	cli()
+	//cli()
+	//slice()
+	maps()
 }
