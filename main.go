@@ -5,5 +5,7 @@ func main() {
 	//cli()
 	//slice()
 	//maps()
-	structs()
+	//structs()
+	//loops()
+	branchs()
 }
