@@ -61,3 +61,14 @@ loop:
 	}
 
 }
+
+// panic and recover
+
+func panicase() {
+	defer func() {
+		if msg := recover(); msg != nil {
+			fmt.Println(msg)
+		}
+	}()
+	return
+}
