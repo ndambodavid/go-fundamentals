@@ -43,7 +43,7 @@ func main() {
 		prices: map[string]float64{"small": 1.65, "medium": 1.80, "large": 1.95},
 	}
 
-	fmt.Println(p.Print())
+	//fmt.Println(p.Print())
 
 	//u, ok := p.(user)
 	//fmt.Println(u, ok)
